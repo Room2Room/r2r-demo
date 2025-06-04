@@ -24,6 +24,10 @@ coverage/
 vite.config.d.ts
 tsconfig.tsbuildinfo
 
+# Local development components (not tracked)
+src/components/SimulationComponent.tsx
+src/components/SolutionComponent.tsx
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
