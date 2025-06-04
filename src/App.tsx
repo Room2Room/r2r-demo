@@ -1,7 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import ChallengeComponent from "@/components/ChallengeComponent"
-import SolutionComponent from "./components/SolutionComponent"
-import SimulationComponent from "./components/SimulationComponent"
 
 function App() {
   return (
@@ -45,7 +43,7 @@ function App() {
                   <span className="bg-blue-500 text-white text-sm px-3 py-1 rounded-full font-mono mr-4 font-bold min-w-[32px] text-center">1</span>
                   <div>
                     <span className="text-gray-800 font-medium">Display Numbers</span>
-                    <p className="text-gray-600 text-sm mt-1">Create a card that displays 8 numbers, each ranging from 1 through 10</p>
+                    <p className="text-gray-600 text-sm mt-1">Create a card that displays 8 numbers, each ranging from 0 through 9</p>
                   </div>
                 </div>
               </div>
@@ -55,7 +53,7 @@ function App() {
                   <span className="bg-purple-500 text-white text-sm px-3 py-1 rounded-full font-mono mr-4 font-bold min-w-[32px] text-center">2</span>
                   <div>
                     <span className="text-gray-800 font-medium">Generate Button</span>
-                    <p className="text-gray-600 text-sm mt-1">Create a button that generates 8 new random integers (1 through 10)</p>
+                    <p className="text-gray-600 text-sm mt-1">Create a button that generates 8 new random integers (0 through 9)</p>
                   </div>
                 </div>
               </div>
@@ -64,8 +62,8 @@ function App() {
                 <div className="flex items-start">
                   <span className="bg-green-500 text-white text-sm px-3 py-1 rounded-full font-mono mr-4 font-bold min-w-[32px] text-center">3</span>
                   <div>
-                    <span className="text-gray-800 font-medium">Count Duplicates</span>
-                    <p className="text-gray-600 text-sm mt-1">Create a function that determines the highest number of equal integers in the set</p>
+                    <span className="text-gray-800 font-medium">Sum the Numbers</span>
+                    <p className="text-gray-600 text-sm mt-1">Calculate and display the sum of all 8 numbers</p>
                   </div>
                 </div>
               </div>
@@ -76,12 +74,12 @@ function App() {
                   <div>
                     <span className="text-gray-800 font-medium">Dynamic Backgrounds</span>
                     <div className="text-gray-600 text-sm mt-1 space-y-1">
-                      <p>Change the card background based on duplicates:</p>
+                      <p>Change the card background based on the sum range:</p>
                       <ul className="ml-4 space-y-1">
-                        <li>• <span className="font-medium">No duplicates:</span> Transparent background</li>
-                        <li>• <span className="font-medium">2 of the same:</span> Blue background</li>
-                        <li>• <span className="font-medium">3 of the same:</span> Green background</li>
-                        <li>• <span className="font-medium">4+ of the same:</span> Yellow background</li>
+                        <li>• <span className="font-medium">Sum 0-18:</span> Red background</li>
+                        <li>• <span className="font-medium">Sum 19-36:</span> Blue background</li>
+                        <li>• <span className="font-medium">Sum 37-54:</span> Green background</li>
+                        <li>• <span className="font-medium">Sum 55-72:</span> Yellow background</li>
                       </ul>
                     </div>
                   </div>
@@ -92,8 +90,8 @@ function App() {
                 <div className="flex items-start">
                   <span className="bg-red-500 text-white text-sm px-3 py-1 rounded-full font-mono mr-4 font-bold min-w-[32px] text-center">5</span>
                   <div>
-                    <span className="text-gray-800 font-medium">Calculate Probabilities</span>
-                    <p className="text-gray-600 text-sm mt-1">Track and display the percentage of each background color after multiple button presses</p>
+                    <span className="text-gray-800 font-medium">Track Results</span>
+                    <p className="text-gray-600 text-sm mt-1">Count and display how many times each background color appears after multiple button presses</p>
                   </div>
                 </div>
               </div>

@@ -1,47 +1,114 @@
-# R2R Coding Assessment
+# React Coding Challenge
 
-A clean React + TypeScript + Tailwind environment for technical interviews.
+## 🚀 Quick Start
 
-## Getting Started
+If you already have Node.js installed:
 
-1. Clone this repository
-2. Install dependencies:
+```bash
+npm install
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📦 Installing Node.js (First Time Setup)
+
+### Option 1: Install with NVM (Recommended)
+
+**On Mac/Linux:**
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Restart terminal or run:
+source ~/.bashrc
+
+# Install latest Node.js
+nvm install node
+nvm use node
+```
+
+**On Windows:**
+1. Download nvm-windows from: https://github.com/coreybutler/nvm-windows/releases
+2. Install the downloaded `.exe` file
+3. Open Command Prompt as Administrator and run:
+```cmd
+nvm install latest
+nvm use latest
+```
+
+### Option 2: Direct Download
+- **Mac**: Download from [nodejs.org](https://nodejs.org) (get the LTS version)
+- **Windows**: Download from [nodejs.org](https://nodejs.org) (get the LTS version)
+
+### Verify Installation
+```bash
+node --version
+npm --version
+```
+
+## 🛠️ Running the Project
+
+1. **Install dependencies:**
    ```bash
    npm install
    ```
-3. Start the development server:
+   
+2. **Start development server:**
    ```bash
    npm run dev
    ```
-4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser
+   
+3. **Open your browser:**
+   Go to [http://localhost:5173](http://localhost:5173)
 
-## Tech Stack
+## 🎯 What You're Building
 
-- **React 18** with TypeScript
-- **Vite** for fast development and building
-- **Tailwind CSS** for styling
-- **shadcn/ui** components
-- **Lucide React** for icons
+This is a coding challenge where you'll build a React component that:
+- Displays 8 random numbers (0-9)
+- Calculates their sum
+- Changes background colors based on sum ranges
+- Tracks results over multiple generations
 
-## Project Structure
+## 📁 Key Files
 
+- `src/components/ChallengeComponent.tsx` - **This is where you code!**
+- `src/App.tsx` - Main app with instructions
+- `src/components/SolutionComponent.tsx` - Reference solution (don't peek!)
+
+## 🆘 Common Issues
+
+**Port already in use?**
+```bash
+npm run dev -- --port 3000
 ```
-src/
-├── components/
-│   └── ui/          # shadcn/ui components
-├── lib/
-│   └── utils.ts     # Utility functions
-├── App.tsx          # Main app component
-├── main.tsx         # App entry point
-└── index.css        # Global styles & Tailwind imports
+
+**Dependencies not installing?**
+```bash
+npm cache clean --force
+npm install
 ```
 
-## Available Scripts
+**Node version too old?**
+```bash
+nvm install node --latest-npm
+nvm use node
+```
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+## 🎨 Styling Options
 
-## Instructions
+You can use either:
+- **Tailwind CSS** (if you know it): `className="grid grid-cols-4 gap-4"`
+- **Regular CSS** (classes provided): `className="numbers-grid"`
+- **Inline styles**: `style={{backgroundColor: '#fecaca'}}`
 
-Your interviewer will provide specific coding tasks. This environment is set up with all the modern tools you'll need to build React components efficiently.
+## 📝 Available Commands
+
+```bash
+npm install          # Install dependencies
+npm run dev          # Start development server  
+npm run build        # Build for production
+npm run preview      # Preview production build
+```
+
+Good luck! 🍀
